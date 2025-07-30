@@ -17,7 +17,9 @@
               <hr />
               <h6>Menu Categories</h6>
               {% if categories %}
-              <a href="{}" class="btn btn-success float-right m-1"
+              <a
+                href="{% url 'add_food' %}"
+                class="btn btn-success float-right m-1"
                 ><i class="fa fa-plus" aria-hidden="true"></i> Add Food</a
               >
               <a
