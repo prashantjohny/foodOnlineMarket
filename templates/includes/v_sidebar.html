@@ -23,11 +23,7 @@
           ><i class="icon-menu5"></i>Opening Hours</a
         >
       </li>
-      <li class="{% if '/my_orders/' in request.path %}active{% endif %}">
-        <a href="{% url 'vendor_my_orders' %}"
-          ><i class="icon-add_shopping_cart"></i>Orders</a
-        >
-      </li>
+      
       <!-- <li><a href="restaurant-earnings.html"><i class="icon-money"></i>Earnings</a></li> -->
       <li>
         <a class="logout-btn" href="{% url 'logout' %}"
