@@ -129,7 +129,7 @@ def activate(request, uidb64, token):
 def login(request):
     if request.user.is_authenticated:
         messages.warning(request, "You are already logged in!")
-        return redirect("dashboard")
+        return redirect("myAccount")
     elif request.method=='POST':
         email=request.POST['email']
         password=request.POST['password']
