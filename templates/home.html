@@ -13,56 +13,74 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 					<div class="element-title">
 						<h1 style="font-size: 40px; color: #505050; text-transform: uppercase; line-height: 50px; margin-bottom: 25px; text-align:center;">
-							We are in the business of food<br>our restaurants do</h1>
+							<u>We are in the business of food</u><br><br>"We don’t just serve food, we create experiences that bring families, friends, and flavors together every day."</h1>
 						<p style="font-size: 18px; letter-spacing: 1px; color: #505050; text-align:center;">
-							Ridiculus sociosqu
-							cursus neque cursus curae ante scelerisque vehicula.</p>
+							</p>
 					</div>
 				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<div class="main-search fancy bg-holder">
+				<div class="container my-4">
+					<div class="p-4 rounded-3 shadow-sm bg-danger">
+						<div class="card-body bg-white">
 						<form action="{% url 'search' %}" method="GET">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-									<div class="field-holder">
-										<input type="text" name="keyword" placeholder="Resturant name or food name">
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
-									<div class="field-holder">
-										<ul>
-											<li class="select-location">
-												<div class="foodbakery-locations-fields-group foodbakery-focus-out">
-													<span class="foodbakery-search-location-icon"><i class="icon-location"></i></span>
-													
-													<input type="text" name="address" class="location-field-text filter" id="id_address" required placeholder="All Locations">
-													<input type="hidden" name="lat" value="" id="id_latitude">
-													<input type="hidden" name="lng" value="" id="id_longitude">
-												</div>
-												
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-									<select name="radius" id="radius" style="height: 50px;" required>
-										<option value="" selected>Choose Radius</option>
-										<option value="5">5km</option>
-										<option value="10">10km</option>
-										<option value="15">15km</option>
-										<option value="25">25km</option>
-										<option value="50">50km</option>
-										<option value="75">75km</option>
-										<option value="100">100km</option>
-									</select>
-								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-									<div class="field-holder">
-										<input type="submit" value="Search">
-									</div>
+							<div class="row g-2 align-items-center">
+
+							<!-- Keyword Search -->
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="input-group">
+								<span class="input-group-text bg-primary text-white bg-danger">
+									<i class="bi bi-search"></i>
+								</span>
+								<input type="text" 
+										name="keyword" 
+										class="form-control form-control-lg" 
+										placeholder="Restaurant or food name">
 								</div>
 							</div>
+
+							<!-- Location -->
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="input-group">
+								<span class="input-group-text bg-primary text-white bg-danger">
+									<i class="bi bi-geo-alt"></i>
+								</span>
+								<input type="text" 
+										name="address" 
+										id="id_address" 
+										class="form-control form-control-lg" 
+										placeholder="Enter location" 
+										required>
+								<input type="hidden" name="lat" id="id_latitude">
+								<input type="hidden" name="lng" id="id_longitude">
+								</div>
+							</div>
+
+							<!-- Radius -->
+							<div class="col-lg-2 col-md-6 col-sm-6">
+								<select name="radius" 
+										id="radius" 
+										class="form-select form-select-lg" 
+										required>
+								<option value="" selected>Radius</option>
+								<option value="5">5 km</option>
+								<option value="10">10 km</option>
+								<option value="15">15 km</option>
+								<option value="25">25 km</option>
+								<option value="50">50 km</option>
+								<option value="75">75 km</option>
+								<option value="100">100 km</option>
+								</select>
+							</div>
+
+							<!-- Submit -->
+							<div class="col-lg-2 col-md-6 col-sm-6">
+								<button type="submit" class="btn btn-danger btn-lg w-100">
+									<i class="bi bi-search"></i> Search
+								</button>
+							</div>
+
+							</div>
 						</form>
+						</div>
 					</div>
 				</div>
 				
@@ -77,8 +95,8 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="element-title align-left">
-						<h2>Top Restaurants</h2>
-						<p>Explore restaurants, bars, and cafés by locality</p>
+						<h2><u>Top Restaurants</u></h2>
+						<p>"From fine dining to street flavors, explore restaurants, bars, and cafés across your neighborhood with ease"</p>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0 !important; padding-left: 0 !important;">
@@ -108,8 +126,8 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="element-title align-center">
-						<h2>Choose From Most Popular Restaurants</h2>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+						<h2><u>Choose From Most Popular Restaurants</u></h2>
+						<p>"Step into an elegant dining experience where gourmet flavors, fine ambiance, and sophistication meet perfection"</p>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
